@@ -17,4 +17,4 @@ Amazon EC2 changes the economics of computing by allowing you to pay only for th
 4. **Dedicated Hosts** - Physical EC2 server dedicated for your use. Dedicated hosts can help you reduce costs by allowing you to use your existing server-bound software licenses.
 
 ## EC2 Instance Types
-![EC2 Instance Types](Images/EC2_Instance_Types.png)
+![EC2 Instance Types](https://github.com/varunu28/AWS-Certification-Notes/blob/master/Images/EC2_Instance_Types.png)

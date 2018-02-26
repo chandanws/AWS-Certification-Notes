@@ -27,3 +27,19 @@ Amazon EBS allows you to create storage volumes and attach them to Amazon EC2 in
 	- Magnetic volumes are ideal for workloads where data is accessed infrequently, and applications where the lowest storage cost is important. 
 
 **You cannot mount 1 EBS volume to multiple EC2 instances, instead use EFS**
+
+## Upgrading EBS Volume Types
+ - To move an EBS volume from 1 availability zone to another, you would have to create a snapshot first and then create another EBS volume using that snapshot.
+ - Snapshots exist on S3
+ - Volume exist on EBS
+ - Snapshots are point in time copies of Volumes.
+ - Snapshots are incremental - this means that only the blocks that have changed since your last snapshot are moved to S3
+ - To create a snapshot for Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot.
+ - However you can take a snap while the instance is running
+ - You can create AMIs from both Volumes and Snapshots
+ - You can change EBS volumes on the fly, including changing the size and storage type.
+ - Volumes will always be in the same availibility zone as EC2 instance.
+ - To move an EC2 volume from one AZ/Region to another, take a snap or an image of it, then copy it to the new AZ/Region.
+ - Snapshots of encrypted volumes are encrypted automatically.
+ - Volumes restored from encrypted snapshots are encrypted automatically.
+ - You can share the snapshots, but only if they are unencypted. They can be shared with other AWS accounts or can be made public.

@@ -18,3 +18,9 @@ Amazon EC2 changes the economics of computing by allowing you to pay only for th
 
 ## EC2 Instance Types
 ![EC2 Instance Types](https://github.com/varunu28/AWS-Certification-Notes/blob/master/Images/EC2_Instance_Types.png)
+
+## Important Points about EC2
+ - By default, you cannot encrypt the EBS root device volume. You can use a third-party tool such as bit locker etc to encrpt the root volume or this can be done when creating AMIs in the AWS console or using the API.
+ - Additional volumes can be encrypted. 
+ - Termination protection is turned off by default, you must turn it on.
+ - On an EBS-backed instance, the default action is for the root EBS volume to be deleted when instance is terminated.

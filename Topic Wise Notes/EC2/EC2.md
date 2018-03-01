@@ -24,3 +24,21 @@ Amazon EC2 changes the economics of computing by allowing you to pay only for th
  - Additional volumes can be encrypted. 
  - Termination protection is turned off by default, you must turn it on.
  - On an EBS-backed instance, the default action is for the root EBS volume to be deleted when instance is terminated.
+ - To create a snapshot for Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot.
+ - Snapshots of encrypted volumes are encrypted automatically.
+ - Volumes restored from encrypted snapshots are encrypted automatically.
+ - You can share snapshots only if they are unencrypted.
+ 	- These snapshots can be shared with other AWS accounts or made public.
+ - Instance store volumes cannot be stopped if the underlying host fails, you will lose your data.
+ - EBS backed instances can be stopped and you will not lose the data on this instance if it is stopped.
+ - You can root EBS backed instances and instance store volumes and you will not lose data.
+ - By default both root volumes will be deleted on termination. However with EBS volumes, you can tell AWS to keep the root device volumes.
+
+## You can select your AMI based on:
+ - Region
+ - Operating Systems
+ - Architecture(32 bit or 64 bit)
+ - Launch Permissions
+ - Storage for the root device (Root device volume)
+ 	- Instance Store (EPHEMERAL Storage)
+ 	- EBS Backed Volumes

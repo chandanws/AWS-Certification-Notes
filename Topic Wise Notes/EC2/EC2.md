@@ -42,3 +42,21 @@ Amazon EC2 changes the economics of computing by allowing you to pay only for th
  - Storage for the root device (Root device volume)
  	- Instance Store (EPHEMERAL Storage)
  	- EBS Backed Volumes
+
+## Load Balancers & Health Check: ([Elastic Load Balancer FAQs](https://aws.amazon.com/elasticloadbalancing/faqs/))
+ - Instances monitored by Elastic Load Balancers(ELBs) are reported as:
+ 	- InService
+ 	- OutofService
+ - Health Checks check the instance health by talking to the instance
+ - Have their own DNS name. You are never given an IP address.
+ - Focus more on Classic load balancer for the exam
+
+## Cloud Watch: ([Cloud Watch FAQs](https://aws.amazon.com/cloudwatch/faqs/))
+ - Different from Cloud Trail as Cloud Trail does the audit of services whereas CloudWatch does monitoring of services.
+ - Monitoring Periods
+ 	- Standard Monitoring = 5 minutes
+ 	- Detailed Monitoring = 1 minute
+ - Dashboards - Create dashboards to see what is happening with your AWS environment.
+ - Alarms - Allows you to set alarms that notify when particular thresholds are hit.
+ - Events - CloudWatch events help you respond to state changes in your AWS resources.
+ - Logs - CloudWatch Logs helps you to aggregate, monitor and store logs.

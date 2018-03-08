@@ -1,4 +1,4 @@
-# Storage Gateway
+# Storage Gateway ([FAQs](https://aws.amazon.com/snowball/faqs/))
 
 ## What is it?
 AWS Storage Gateway is a service that connects an on-premises software application with cloud-based storage to provide seamless and secure integration between an organization's on-premises IT environment and AWS's storage infrastructure. The service enables you to securely store data to AWS cloud for scalable and cost-effective storage.

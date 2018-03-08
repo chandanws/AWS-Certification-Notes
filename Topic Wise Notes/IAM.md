@@ -1,4 +1,4 @@
-# IAM (Identity Access Management)
+# IAM (Identity Access Management) ([FAQs](https://aws.amazon.com/iam/faqs/))
 
 ## Important Points
  1. IAM allows to manage users and their level of access to AWS console. 

@@ -60,3 +60,19 @@ Amazon EC2 changes the economics of computing by allowing you to pay only for th
  - Alarms - Allows you to set alarms that notify when particular thresholds are hit.
  - Events - CloudWatch events help you respond to state changes in your AWS resources.
  - Logs - CloudWatch Logs helps you to aggregate, monitor and store logs.
+
+**http://169.254.169.254/latest/meta-data/ (IP for EC2 Metadata)**
+
+## Placement Groups
+A placement group is a logical grouping of instances within a single availability zone. Using placement groups enable applications to participate in a low-latency, 10 Gbps network. Placement groups are recommended for applicatios that benifit fron low network latency, high network throughput, or both.
+
+ - A placement group can't span multiple availability zones.
+ - The name for an availability group must be unique within an AWS account.
+ - Only certain type of instances can be launched in a placement group
+ 	- Compute Optimized 
+ 	- GPU
+ 	- Memory Optimized 
+ 	- Storage Optimized
+ - AWS recommends homogenous instances within placement group.
+ - You can't merge placement groups.
+ - You can't move an existing instance into a placement group. You can create an AMI from your existing instance, and then launch a new instance from the AMI into a placement group.

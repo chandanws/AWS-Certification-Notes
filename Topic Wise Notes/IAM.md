@@ -13,6 +13,7 @@
  10. Root has adminstrator level access
  11. Users and policy documents are applied globally.
  12. "Power User Access" allows access to all AWS services except management of groups and users within IAM.
+ 13. Roles are global and not region specific.
 
 ## What does it do?
 - Centralized control of AWS account

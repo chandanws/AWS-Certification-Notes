@@ -1,4 +1,4 @@
-# EC2 (Elastic Compute Cloud) ([EC2 FAQs](https://aws.amazon.com/ec2/faqs/) [Autoscaling FAQs](https://aws.amazon.com/autoscaling/faqs/) [Load Balancing FAQs](https://aws.amazon.com/elasticloadbalancing/faqs/))
+# EC2 (Elastic Compute Cloud) ([EC2 FAQs](https://aws.amazon.com/ec2/faqs/) | [Autoscaling FAQs](https://aws.amazon.com/autoscaling/faqs/) | [Load Balancing FAQs](https://aws.amazon.com/elasticloadbalancing/faqs/))
 
 ## What is it?
 Amazon EC2 is a web service that provides resizable compute capacity in the cloud. EC2 reduces the time required to obtain and boot new server instances to minutes, allowing you to quickly scale capacity, both up and down, as your computing requirement changes.

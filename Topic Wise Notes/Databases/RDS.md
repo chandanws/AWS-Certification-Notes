@@ -1,7 +1,17 @@
-# RDS ([FAQs](https://aws.amazon.com/rds/faqs/))
+# RDS ([FAQs](https://aws.amazon.com/rds/faqs/)) **MOST IMPORTANT**
+
+*Mostly used for OLTP(Online Transaction Processing)*
+
+## Available for:
+- SQL Server
+- Oracle
+- MySQL Server
+- Postgre SQL
+- Maria DB
+- SQL
+- Aurora
 
 ## Backups
-
  - **Automated Backups** 
  	- Allow you to recover your database to any point in time within a "retention period".
  	- Retention period can be between one and 35 days. It will take a full daily snapshot and will also store transaction logs throughout the day. 
@@ -14,6 +24,10 @@
  	- They are stored even after you delete the original RDS instance.
 
 *Whenever you restore either an automatic backup or a manual snapshot, the restored version of the database will be a new RDS instance with a new end point*
+
+*When you add a rule to an RDS security group you do need to specify a port number or protocol*
+
+*If you are using Amazon RDS Provisioned IOPS storage with MySQL and Oracle database engines the maximum size RDS volume you can have by default is 6TB*
 
 ## Encryption
  - Encryption at rest is supported for MySQL, Oracle, SQL Server, Postgre SQL & MariaDB. Encryption is done using the AWS key management service (KMS)

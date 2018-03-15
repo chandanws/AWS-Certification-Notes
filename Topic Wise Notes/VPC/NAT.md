@@ -31,3 +31,7 @@
  - Network ACLs are stateless; responses to the allowed inbound traffic are subject to the rules for outbound traffic
  - Ephemeral ports are to be allowed on outbound rules only
  - Block IP addresses using ACLs & not security groups
+
+## NAT vs Bastion
+ - A NAT is used to provide internet traffic to EC2 instance in private subnets
+ - A Bastion is used to securely administer EC2 instances(Using SSH or RDP) in private subnets

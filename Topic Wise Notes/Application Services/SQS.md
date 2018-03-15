@@ -7,6 +7,7 @@ It is a distributed queue system that enables web service applications to quickl
  - Visibility time out is the time the message is invisible from the queue once the reader picks it up
  - Visibility timeout is maximum 12 hours
  - Messages can contain upto 256 Kb of text in any format
+ - SQS gaurantees that the message would be processed at least once.
  - Any component can later retrieve the message programmatically using the Amazon SQS API
  - Queue acts as a buffer between the component producing and saving data, and the component receiving the data for processing.
  - Long polling is a way to retrieve your messages from your Amazon SQS queues.

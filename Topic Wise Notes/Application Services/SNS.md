@@ -10,6 +10,15 @@ SNS is a web service that makes it easy to set up, operate, and send notificatio
  - Pay-as-you go model
  - Simple point and click interface
 
+## SNS Subscribers
+ - HTTP
+ - HTTPS
+ - Email
+ - Email-JSON
+ - SQS
+ - Application
+ - Lambda
+
 ## SNS vs SQS
  - Both messaging services in AWS
  - SNS - Push

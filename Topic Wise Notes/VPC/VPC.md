@@ -1,4 +1,4 @@
-# VPC
+# VPC ([FAQs](https://aws.amazon.com/vpc/faqs/))
 *Kind of a virtual/logical data centre in the cloud*
 
 ## Important Points
